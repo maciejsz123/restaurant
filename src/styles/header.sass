@@ -1,0 +1,124 @@
+$bronze: #B3965B
+$red: #F34235
+$yellow: #FEC018
+$green: #4AAe51
+$green2: #139F85
+$green3: #95B02A
+$orange: #FD700D
+$purple: #77308B
+$header-height: 100px
+
+.ulHeader
+  list-style-type: none
+  display: flex
+  flex-flow: row nowrap
+  background-color: $red
+  margin: 0
+  padding: 0
+  height: $header-height
+  align-items: center
+  justify-content: space-around
+
+.liHeader
+  margin-bottom: 1px
+
+.header-fixed
+  position: fixed
+  width: 100%
+  z-index: 3
+  display: block
+
+.bottomeff
+  display: inline-block
+
+.bottomeff::after
+  display: block
+  content: ''
+  height: 2px
+  background: black
+  width: 0px
+  transition: width 0.2s ease
+
+.bottomeff:hover::after
+  width: 100%
+
+.imgHeader
+  width: 15vw
+  height: $header-height
+  cursor: pointer
+
+.header-link
+  color: black
+  text-decoration: none !important
+  &:hover
+    color: black
+  &:visited
+    color: black
+
+.logoImg
+  background-color: $red
+
+.hamburgerIcon
+  z-index: 3
+  position: fixed
+  left: 5px
+  top: 5px
+  display: none
+  cursor: pointer
+  padding: 20px
+  margin: 5px
+  & > *
+    width: 35px
+    height: 5px
+    background: white
+    border: 0.5px solid #bdbdbd
+    margin: 5px
+    border-radius: 3px
+    transition: transform 0.2s
+
+.clickedHamburger
+  & > div:nth-child(1)
+    transform: rotate(45deg) translate(20%)
+  & > div:nth-child(2)
+    display: none
+  & > div:nth-child(3)
+    transform: rotate(-45deg) translate(20%)
+
+.hamburgerActive
+  display: none
+  position: fixed
+  top: 0px
+  left: 0px
+  width: 100vw
+  z-index: 2
+
+.hamburgerActiveDisplay
+  display: block
+  overflow: hidden
+
+@media only screen and (max-width: 992px)
+  .header-fixed
+    display: none
+
+  .hamburgerIcon
+    display: block
+
+  .ulHeader
+    flex-flow: column nowrap
+    background-color: white
+    height: 100vh
+    align-items: center
+    justify-content: space-around
+
+  .spanHeader
+    width: 80vw
+    height: 18vh
+    display: flex
+    flex-flow: column nowrap
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    transition: background 0.3s
+    &:hover
+      border: 1px solid $red
+      background: $orange

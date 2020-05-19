@@ -1,0 +1,98 @@
+#slider, .wrap
+  margin: 0
+  padding: 0
+
+.wrap
+  position: relative
+
+.slide
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+
+.slide1
+  position: relative
+  background-image: url('../images/main1.jpg')
+  height: 100vh
+  display: block
+  left: 0
+
+.slide2
+  position: relative
+  background-image: url('../images/main2.jpg')
+  height: 100vh
+  display: none
+  left: 0
+
+.slide3
+  position: relative
+  background-image: url('../images/main3.jpg')
+  height: 100vh
+  display: none
+  left: 0
+
+.sliderText
+  color: white
+  text-shadow: 1px 1px 1px black, 1px 1px 1px black
+  display: flex
+  flex-flow: column nowrap
+  justify-content: center
+  text-align: center
+  min-height: 100%
+  position: relative
+  top: 10px
+  transition: top 1s ease
+  & *
+    margin: 3% 0
+    padding: 0
+  & .spanCarousel
+    margin: 0 16%
+
+.moveText
+  top: 0px
+
+.arrow
+  position: absolute
+  top: 60%
+  cursor: pointer
+  width: 0
+  height: 0
+  margin-top: -50px
+  border-style: solid
+
+#left-arrow
+  border-width: 20px 30px 20px 0
+  border-color: transparent white transparent transparent
+  margin-left: 30px
+  z-index: 1
+  left: 0
+
+#right-arrow
+  border-width: 20px 0px 20px 30px
+  border-color: transparent transparent transparent white
+  margin-right: 30px
+  right: 0
+
+#indicator
+  position: absolute
+  top: 90%
+  left: 50%
+  transform: translate(-50%, -50%)
+  width: 200px
+  display: flex
+  flex-flow: row nowrap
+  justify-content: center
+  border-radius: 100px
+  & > *
+    padding: 7px
+    margin: 5% 8%
+    border: 1px solid white
+    border-radius: 100px
+    background: transparent
+    cursor: pointer
+  & :first-child
+    background: white
+
+@media only screen and (max-width: 776px)
+  #slider
+    font-size: 75%

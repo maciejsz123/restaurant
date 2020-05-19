@@ -1,0 +1,42 @@
+//font
+$default-font: 'Poppins', sans-serif
+$default-font-size: 21px
+
+//colors
+$bronze: #B3965B
+$red: #F34235
+$yellow: #FEC018
+$green: #4AAe51
+$green2: #139F85
+$green3: #95B02A
+$orange: #FD700D
+$purple: #77308B
+
+body
+  background-color: white
+  font-family: $default-font
+  font-size: $default-font-size
+  margin: 0
+
+html
+  scroll-behavior: smooth
+
+.slide-from-bottom
+  animation: slide-from-bottom 0.5s ease
+  opacity: 1
+
+.toAnimate
+  opacity: 0
+
+@keyframes slide-from-bottom
+  0%
+    transform: translate(0, 50px)
+    opacity: 0
+  100%
+    opacity: 1
+
+@media only screen and (max-width: 992px)
+  html
+    scroll-behavior: auto
+  .toAnimate
+    opacity: 1

@@ -1,0 +1,38 @@
+.offerImg
+  width: 100%
+  height: 40vh
+  min-height: 270px
+  padding: 0
+  margin: 0
+
+.col-md-reset
+  padding: 0
+
+.textOnImg
+  position: absolute
+  top: 0%
+  font-size: 7vw
+  width: 100%
+  height: 100%
+  color: transparent
+  background: transparent
+  display: flex
+  flex-flow: column nowrap
+  align-items: center
+  justify-content: center
+  visibility: hidden
+  transition: background 0.3s, color 0.3s
+  cursor: default
+
+.col-md-reset:hover .textOnImg
+  visibility: visible
+  color: white
+  background: black
+
+@media only screen and (max-width: 992px)
+  .offerImg
+    min-height: 230px
+
+@media only screen and (max-width: 768px)
+  .offerImg
+    height: 100%
