@@ -17,6 +17,7 @@ function App() {
       <Offer />
       <Menu />
       <Address />
+      <Address />
       <BookTable />
     </div>
   );
