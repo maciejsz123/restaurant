@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../styles/mainCarousel.sass';
+import './mainCarousel.sass';
 
 class MainCarousel extends Component {
 
@@ -31,13 +31,13 @@ class MainCarousel extends Component {
     let elem = document.getElementsByClassName('slide');
     for(let i=0; i< document.getElementsByClassName('slide').length; i++) {
       elem[i].style.display = 'none';
-      elem[i].childNodes[0].classList.remove('moveText');
+      elem[i].childNodes[0].classList.remove('move-text');
       document.getElementById(`indicator${i+1}`).style.backgroundColor = 'transparent';
     }
     elem[nextElement].style.display = "block";
 
     setTimeout(() => {
-      elem[nextElement].childNodes[0].classList.add('moveText');
+      elem[nextElement].childNodes[0].classList.add('move-text');
     }, 50);
 
     document.getElementById(`indicator${nextElement+1}`).style.backgroundColor = 'white';
@@ -51,7 +51,7 @@ class MainCarousel extends Component {
           </div>
           <div id="slider">
             <div className="slide slide1">
-              <div className="sliderText moveText">
+              <div className="slider-text move-text">
                 <h1>Text 1</h1>
                 <span className="spanCarousel">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
@@ -60,9 +60,9 @@ class MainCarousel extends Component {
           </div>
           <div id="slider">
             <div className="slide slide2">
-            <div className="sliderText">
+            <div className="slider-text">
               <h1>Text 2</h1>
-              <span className="spanCarousel">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              <span className="span-carousel">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                nisi ut aliquip ex ea commodo consequat.</span>
@@ -71,9 +71,9 @@ class MainCarousel extends Component {
           </div>
           <div id="slider">
             <div className="slide slide3">
-            <div className="sliderText">
+            <div className="slider-text">
               <h1>Text 3</h1>
-              <span className="spanCarousel">Consectetur adipiscing elit,
+              <span className="span-carousel">Consectetur adipiscing elit,
               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                nisi ut aliquip ex ea commodo consequat.</span>

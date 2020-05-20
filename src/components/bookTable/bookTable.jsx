@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../styles/bookTable.sass';
+import './bookTable.sass';
 
 class BookTable extends Component {
   constructor() {
@@ -45,7 +45,7 @@ class BookTable extends Component {
       [e.target.name]: e.target.value
     });
 
-    let formCheck = document.querySelectorAll('#reservation .formCheck');
+    let formCheck = document.querySelectorAll('#reservation .form-check');
     let check = Array.from(formCheck).every( form => {
       return (form.style.display === 'none');
     });
@@ -58,30 +58,30 @@ class BookTable extends Component {
 
   render() {
     return(
-        <form action='/reserve.html' className='sideMargin' id='reservation'>
-          <h2 className='toAnimate'>Book a table</h2>
-          <div className='form-group toAnimate'>
+        <form action='/reserve.html' className='side-margin' id='reservation'>
+          <h2 className='to-animate'>Book a table</h2>
+          <div className='form-group to-animate'>
             <label>date: <input type="date" name='date' value={this.state.date} className='form-control' onChange={this.onChange}/></label>
-            <p className='formCheck'>chosen date can't be earlier than today</p>
+            <p className='form-check'>chosen date can't be earlier than today</p>
           </div>
-          <div className='form-group toAnimate'>
+          <div className='form-group to-animate'>
             <label>time: <input type="time" name='time' value={this.state.time} min="11:00" max="22:00" className='form-control' onChange={this.onChange}/></label>
-            <p className='formCheck'>chose time between 11 am and 11 pm</p>
+            <p className='form-check'>chose time between 11 am and 11 pm</p>
           </div>
-          <div className='form-group toAnimate'>
+          <div className='form-group to-animate'>
             <label>persons (max 8): <input type="number" name='persons' value={this.state.persons} min="1" max="8"  className='form-control' style={{width: '300px', maxWidth:'80vw'}} onChange={this.onChange}/></label>
-            <p className='formCheck'>max 8 persons</p>
+            <p className='form-check'>max 8 persons</p>
           </div>
-          <div className='form-group toAnimate'>
+          <div className='form-group to-animate'>
             <input type="text" name='name' value={this.state.name} maxLength='20' placeholder="name" className='form-control' style={{width: '300px', maxWidth:'80vw'}} onChange={this.onChange}/>
           </div>
-          <div className='form-group toAnimate'>
+          <div className='form-group to-animate'>
             <input type="text" name='surname' value={this.state.surname} maxLength='40' placeholder="surname" className='form-control' style={{width: '300px', maxWidth:'80vw'}} onChange={this.onChange}/>
           </div>
-          <div className='form-group toAnimate'>
+          <div className='form-group to-animate'>
             <input type="text-area" name='additionalInfo' value={this.state.additionalInfo} maxLength='100' placeholder="additional info" className='form-control' style={{width: '300px', maxWidth:'80vw'}} onChange={this.onChange}/>
           </div>
-          <div className='form-group toAnimate'>
+          <div className='form-group to-animate'>
             <button className="btn btn-success" disabled>send</button>
           </div>
         </form>

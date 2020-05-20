@@ -8,7 +8,7 @@ $orange: #FD700D
 $purple: #77308B
 $header-height: 100px
 
-.ulHeader
+.ul-header
   list-style-type: none
   display: flex
   flex-flow: row nowrap
@@ -19,7 +19,7 @@ $header-height: 100px
   align-items: center
   justify-content: space-around
 
-.liHeader
+.li-header
   margin-bottom: 1px
 
 .header-fixed
@@ -28,10 +28,10 @@ $header-height: 100px
   z-index: 3
   display: block
 
-.bottomeff
+.bottom-eff
   display: inline-block
 
-.bottomeff::after
+.bottom-eff::after
   display: block
   content: ''
   height: 2px
@@ -39,10 +39,10 @@ $header-height: 100px
   width: 0px
   transition: width 0.2s ease
 
-.bottomeff:hover::after
+.bottom-eff:hover::after
   width: 100%
 
-.imgHeader
+.img-header
   width: 15vw
   height: $header-height
   cursor: pointer
@@ -55,10 +55,10 @@ $header-height: 100px
   &:visited
     color: black
 
-.logoImg
+.logo-img
   background-color: $red
 
-.hamburgerIcon
+.hamburger-icon
   z-index: 3
   position: fixed
   left: 5px
@@ -76,7 +76,7 @@ $header-height: 100px
     border-radius: 3px
     transition: transform 0.2s
 
-.clickedHamburger
+.clicked-hamburger
   & > div:nth-child(1)
     transform: rotate(45deg) translate(20%)
   & > div:nth-child(2)
@@ -84,7 +84,7 @@ $header-height: 100px
   & > div:nth-child(3)
     transform: rotate(-45deg) translate(20%)
 
-.hamburgerActive
+.hamburger-active
   display: none
   position: fixed
   top: 0px
@@ -92,7 +92,7 @@ $header-height: 100px
   width: 100vw
   z-index: 2
 
-.hamburgerActiveDisplay
+.hamburger-active-display
   display: block
   overflow: hidden
 
@@ -100,17 +100,17 @@ $header-height: 100px
   .header-fixed
     display: none
 
-  .hamburgerIcon
+  .hamburger-icon
     display: block
 
-  .ulHeader
+  .ul-header
     flex-flow: column nowrap
     background-color: white
     height: 100vh
     align-items: center
     justify-content: space-around
 
-  .spanHeader
+  .span-header
     width: 80vw
     height: 18vh
     display: flex

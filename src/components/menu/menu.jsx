@@ -1,12 +1,12 @@
 import React from 'react';
 import MenuItem from './menuItem';
-import '../styles/menu.sass';
+import './menu.sass';
 
 function Menu() {
   return(
     <div className='sideMargin' id='menu'>
-      <div className='row toAnimate'>
-        <h2 className='bottomLine'>Pizza</h2>
+      <div className='row to-animate'>
+        <h2 className='bottom-line'>Pizza</h2>
       </div>
       <div className='row '>
         <div className='col-md-6'>
@@ -34,7 +34,7 @@ function Menu() {
           />
         </div>
       </div>
-      <div className='row toAnimate'>
+      <div className='row to-animate'>
         <h2 className='bottomLine'>Salad</h2>
       </div>
       <div className='row'>
@@ -63,8 +63,8 @@ function Menu() {
           />
         </div>
       </div>
-      <div className='row toAnimate'>
-        <h2 className='bottomLine'>Desserts</h2>
+      <div className='row to-animate'>
+        <h2 className='bottom-line'>Desserts</h2>
       </div>
       <div className='row'>
         <div className='col-md-6'>
