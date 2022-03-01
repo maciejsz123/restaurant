@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/restaurant/static/css/main.221ce3a9.chunk.css",
+    "main.js": "/restaurant/static/js/main.83589242.chunk.js",
+    "main.js.map": "/restaurant/static/js/main.83589242.chunk.js.map",
+    "runtime-main.js": "/restaurant/static/js/runtime-main.874cb75f.js",
+    "runtime-main.js.map": "/restaurant/static/js/runtime-main.874cb75f.js.map",
+    "static/js/2.bb201596.chunk.js": "/restaurant/static/js/2.bb201596.chunk.js",
+    "static/js/2.bb201596.chunk.js.map": "/restaurant/static/js/2.bb201596.chunk.js.map",
+    "index.html": "/restaurant/index.html",
+    "precache-manifest.72f5c84153ff20e825b47aa313e3cce3.js": "/restaurant/precache-manifest.72f5c84153ff20e825b47aa313e3cce3.js",
+    "service-worker.js": "/restaurant/service-worker.js",
+    "static/css/main.221ce3a9.chunk.css.map": "/restaurant/static/css/main.221ce3a9.chunk.css.map",
+    "static/js/2.bb201596.chunk.js.LICENSE.txt": "/restaurant/static/js/2.bb201596.chunk.js.LICENSE.txt",
+    "static/media/cake.jpg": "/restaurant/static/media/cake.62fab076.jpg",
+    "static/media/kitchen.jpg": "/restaurant/static/media/kitchen.e03ba296.jpg",
+    "static/media/logo.png": "/restaurant/static/media/logo.23af7da1.png",
+    "static/media/mainCarousel.sass": "/restaurant/static/media/main3.4bb68ff1.jpg",
+    "static/media/pancake.jpg": "/restaurant/static/media/pancake.ddd655fd.jpg",
+    "static/media/patio.jpg": "/restaurant/static/media/patio.3faa741a.jpg",
+    "static/media/pizza.jpg": "/restaurant/static/media/pizza.b93afe61.jpg",
+    "static/media/wedding.jpg": "/restaurant/static/media/wedding.135e98b1.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.874cb75f.js",
+    "static/js/2.bb201596.chunk.js",
+    "static/css/main.221ce3a9.chunk.css",
+    "static/js/main.83589242.chunk.js"
+  ]
+}
